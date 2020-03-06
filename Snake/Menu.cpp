@@ -84,9 +84,9 @@ int Menu::OpenMenu()
 		do
 		{
 			PrintMenu();
+			std::cin >> input;
 			std::cin.clear();
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			std::cin >> input;
 		} while ((input < 1) && (input > 4));
 
 		switch (input)
@@ -106,9 +106,9 @@ int Menu::OpenMenu()
 				std::cout << "Enter your name: ";
 
 				std::string name;
+				std::cin >> name;
 				std::cin.clear();
 				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-				std::cin >> name;
 				hs.AddHighScore(name, totalScore);
 			}
 

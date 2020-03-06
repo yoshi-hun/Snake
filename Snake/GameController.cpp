@@ -201,7 +201,7 @@ GameController::GameController(Settings* s)
 
 GameController::~GameController()
 {
-	for (unsigned i = 0; i < _rows; ++i)
+	for (unsigned i = 0; i < _columns; ++i)
 	{
 		delete _board[i];
 	}

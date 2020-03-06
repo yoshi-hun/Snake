@@ -1,5 +1,4 @@
 #include "InputHandler.h"
-#include "GameState.h"
 
 void InputHandler::handleInput(int key, int scancode, int action, int mods)
 {

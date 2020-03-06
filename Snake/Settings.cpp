@@ -17,8 +17,8 @@ Settings::Settings()
 	glfwInit();
 	const GLFWvidmode * mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
 
-	std::cout << "Snake game initial setup!" << std::endl;
-	std::cout << "Rows (default 12): ";
+	std::cout << "Snake game initial setup" << std::endl;
+	std::cout << "Specify the number of rows of the game area (default 12): ";
 	unsigned _rows;
 	std::cin >> _rows;
 	if (std::cin.fail() || _rows < 2)
@@ -40,7 +40,7 @@ Settings::Settings()
 		rows = _rows;
 	}
 
-	std::cout << "Columns (default 18): ";
+	std::cout << "Specify the number of columns of the game area (default 18): ";
 	unsigned _cols;
 	std::cin >> _cols;
 	if (std::cin.fail() || _cols < 2)
